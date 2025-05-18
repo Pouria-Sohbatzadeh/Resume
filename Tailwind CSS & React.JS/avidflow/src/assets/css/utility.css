@@ -1,0 +1,5 @@
+@layer utilities {
+    .custom_container {
+      @apply pr-[1.5rem] pl-[1.5rem] text-amber-300;
+    }
+}

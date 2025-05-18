@@ -1,0 +1,100 @@
+@font-face {
+    font-family: iran_sans;
+    src: url(../fonts/IRANSans/IRANSansWeb.woff2);
+}
+
+@font-face {
+    font-family: Byekan;
+    src: url(../fonts/B_Yekan/Yekan.ttf);
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Vazirmatn;
+    src: url(../fonts/vazirmatn/Vazirmatn-Black.ttf);
+    font-weight: 900;
+}
+
+.new_product_setting {
+    font-family: "Byekan";
+
+}
+
+.product_category {
+    font-family: "Byekan";
+
+}
+
+.index_middle {
+    font-family: "Byekan";
+}
+
+.footer {
+    font-family: "Byekan";
+}
+
+.user_account_mid {
+    font-family: "Byekan";
+}
+
+.index_footer {
+    font-family: "Vazirmatn";
+    font-weight: 400;
+    /* Now the font is set. */
+}
+
+.edit_button, .confirm_button {
+    font-family: "Byekan";
+}
+
+.product_img, .img_description {
+    font-family: "Byekan";
+
+}

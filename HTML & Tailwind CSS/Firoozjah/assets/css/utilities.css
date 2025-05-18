@@ -1,0 +1,15 @@
+.container-pouria {
+    width: 89%;
+}
+
+.iransans_font {
+    font-family: "iran_sans";
+}
+
+.button {
+    font-family: "iran_sans";
+}
+
+.button:focus {
+    outline: none;
+}

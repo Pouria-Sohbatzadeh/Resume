@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* CSS imports */
+@import "./assets/css/forcedUtility.css";
+@import "./assets/css/font.css";
+
+/* Reset */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply min-h-screen font-sans bg-[#f7f8f9] text-[#222];
+    direction: rtl;
+    font-family: iran_sans;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  ul,
+  li {
+    @apply list-none;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  input {
+    direction: rtl !important
+  }
+
+  select {
+    @apply outline-none cursor-pointer;
+  }
+
+  label {
+    @apply cursor-pointer;
+  }
+
+  .resetButton {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
+    font: inherit !important;
+    text-shadow: none !important;
+
+    --btn-bg: transparent !important;
+    --btn-border: transparent !important;
+    --btn-shadow: none !important;
+    --btn-fg: inherit !important;
+    --btn-p: 0 !important;
+  }
+}
+
+@layer components {
+  .custom_container {
+    @apply pr-[20px] pl-[20px];
+  }
+
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+
+  .headerList_members span {
+    position: relative;
+  }
+
+  .headerList_members span::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 16px;
+    left: 50%;
+    top: 130%;
+    transform: translateX(-50%);
+
+    background-color: #3532b2;
+
+    display: none;
+  }
+
+  /* For hover */
+  .headerList_members:hover {
+    color: #3532b2 !important;
+  }
+  .headerList_members:hover span::after {
+    display: inline-block;
+  }
+
+  /* For active */
+  .headerList_membersActive {
+    color: #3532b2 !important;
+  }
+  .headerList_membersActive span::after {
+    display: inline-block;
+  }
+
+  .customCheck::before {
+    content: "";
+    height: 20px !important;
+  }
+
+  /* DaisyUI's custom class names */
+  .breadcrumbs li::before {
+    transform: rotate(180deg);
+    opacity: 0 !important;
+  }
+
+  .breadcrumbs li + li::after {
+    content: "/";
+    position: absolute;
+    display: inline-block;
+    margin: 0 0.8em; /* horizontal spacing */
+    color: inherit;
+  }
+}

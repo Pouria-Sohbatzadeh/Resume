@@ -1,0 +1,33 @@
+@import url(./assets/css/style.css);
+
+@import "tailwindcss";
+
+
+@layer base {
+    /* reset css */
+    * /* All the content in the webpage (Including <body> and <ul>) */, *::after /* All the ::after  */,*::before /* All the ::before */{
+      margin: 0;/* Have no margin value without me entering it */
+      padding: 0;/* Have no padding value without me entering it */
+      box-sizing: border-box;
+    }
+    body {
+      font-family: estedad;
+      font-weight: 400;
+      min-height: 100vh;
+
+      background-color: rgb(244 244 245);
+
+      direction: rtl;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    ul, li {
+      list-style: none;
+    }
+}  
+
+

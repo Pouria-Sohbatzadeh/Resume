@@ -1,0 +1,361 @@
+.send-check {
+    position: relative; /* This is essential, Do not change */
+    
+}
+
+/* Only change the block name of the class for your uses. */
+.send-check__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-check__label {
+    display: inline-block;/* This is essential, Do not change, Without it we can't give <label> height: */
+    position: relative;/* This is essential, Do not change, Without it, We can't add the check */
+    
+    cursor: pointer;/* This is essential, Do not change, Without it the user won't know they can click on the tag. */
+
+    /* Just creating the background for the check, You can freely change these */
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+
+    /* Just creating the background for the check, You can freely change these */
+}
+
+.send-check__label::before {
+    /* These are essential, Do not change, Without them the check does not get added. */
+    content: "\f00c";
+    font-weight: 900;/* If 900 doesn't work, Change the value to 400, And vice versa if 400 doesn't work */
+    
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+        /* These are essential, Do not change, Without them the check does not get added. */
+    color: #0085FF;
+    display: none;/* You CAN change this, But it's better from a visual standpoint for the check to appear after the user clickes on the tag.  */
+
+    /* These are essential, Do not change */
+    transform-origin: 50% 50%;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%);/* Verticly centering the icon */
+    
+}
+
+
+/* Make whatever changes you want to the background  */
+.send-check__input:checked ~ .send-check__label {
+    border: 1px solid #0085FF;
+}
+
+.send-check__input:checked ~ .send-check__label::before {
+    display: inline; /* Makes the check reappear after the user clicks on its background */
+    
+}
+
+/* send-check is done */
+.send-checkII {
+    position: relative; /* This is essential, Do not change */
+    
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkII__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkII__label {
+    display: inline-block;/* This is essential, Do not change, Without it we can't give <label> height: */
+    position: relative;/* This is essential, Do not change, Without it, We can't add the check */
+    
+    cursor: pointer;/* This is essential, Do not change, Without it the user won't know they can click on the tag. */
+
+    /* Just creating the background for the check, You can freely change these */
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+
+    /* Just creating the background for the check, You can freely change these */
+}
+
+.send-checkII__label::before {
+    /* These are essential, Do not change, Without them the check does not get added. */
+    content: "\f00c";
+    font-weight: 900;/* If 900 doesn't work, Change the value to 400, And vice versa if 400 doesn't work */
+    
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+        /* These are essential, Do not change, Without them the check does not get added. */
+    color: #0085FF;
+    display: none;/* You CAN change this, But it's better from a visual standpoint for the check to appear after the user clickes on the tag.  */
+
+    /* These are essential, Do not change */
+    transform-origin: 50% 50%;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%);/* Verticly centering the icon */
+    
+}
+
+
+/* Make whatever changes you want to the background  */
+.send-checkII__input:checked ~ .send-checkII__label {
+    border: 1px solid #0085FF;
+}
+
+.send-checkII__input:checked ~ .send-checkII__label::before {
+    display: inline; /* Makes the check reappear after the user clicks on its background */
+    
+}
+/* send-checkII is done */
+
+.send-checkIII {
+    position: relative; /* This is essential, Do not change */
+    
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkIII__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkIII__label {
+    display: inline-block;/* This is essential, Do not change, Without it we can't give <label> height: */
+    position: relative;/* This is essential, Do not change, Without it, We can't add the check */
+    
+    cursor: pointer;/* This is essential, Do not change, Without it the user won't know they can click on the tag. */
+
+    /* Just creating the background for the check, You can freely change these */
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+
+    /* Just creating the background for the check, You can freely change these */
+}
+
+.send-checkIII__label::before {
+    /* These are essential, Do not change, Without them the check does not get added. */
+    content: "\f00c";
+    font-weight: 900;/* If 900 doesn't work, Change the value to 400, And vice versa if 400 doesn't work */
+    
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+        /* These are essential, Do not change, Without them the check does not get added. */
+    color: #0085FF;
+    display: none;/* You CAN change this, But it's better from a visual standpoint for the check to appear after the user clickes on the tag.  */
+
+    /* These are essential, Do not change */
+    transform-origin: 50% 50%;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%);/* Verticly centering the icon */
+    
+}
+
+
+/* Make whatever changes you want to the background  */
+.send-checkIII__input:checked ~ .send-checkIII__label {
+    border: 1px solid #0085FF;
+}
+
+.send-checkIII__input:checked ~ .send-checkIII__label::before {
+    display: inline; /* Makes the check reappear after the user clicks on its background */
+    
+}
+/* send-checkIII is done */
+
+.send-checkIV {
+    position: relative; /* This is essential, Do not change */
+    
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkIV__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkIV__label {
+    display: inline-block;/* This is essential, Do not change, Without it we can't give <label> height: */
+    position: relative;/* This is essential, Do not change, Without it, We can't add the check */
+    
+    cursor: pointer;/* This is essential, Do not change, Without it the user won't know they can click on the tag. */
+
+    /* Just creating the background for the check, You can freely change these */
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+
+    /* Just creating the background for the check, You can freely change these */
+}
+
+.send-checkIV__label::before {
+    /* These are essential, Do not change, Without them the check does not get added. */
+    content: "\f00c";
+    font-weight: 900;/* If 900 doesn't work, Change the value to 400, And vice versa if 400 doesn't work */
+    
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+        /* These are essential, Do not change, Without them the check does not get added. */
+    color: #0085FF;
+    display: none;/* You CAN change this, But it's better from a visual standpoint for the check to appear after the user clickes on the tag.  */
+
+    /* These are essential, Do not change */
+    transform-origin: 50% 50%;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%);/* Verticly centering the icon */
+    
+}
+
+
+/* Make whatever changes you want to the background  */
+.send-checkIV__input:checked ~ .send-checkIV__label {
+    border: 1px solid #0085FF;
+}
+
+.send-checkIV__input:checked ~ .send-checkIV__label::before {
+    display: inline; /* Makes the check reappear after the user clicks on its background */
+    
+}
+/* send-checkIV is done */
+
+.send-checkV {
+    position: relative; /* This is essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkV__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkV__label {
+    display: inline-block; /* This is essential, Do not change */
+    position: relative; /* This is essential, Do not change */
+    cursor: pointer; /* This is essential, Do not change */
+
+    /* Customizable background */
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+}
+
+.send-checkV__label::before {
+    /* Essential properties for checkmark */
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    color: #0085FF;
+    display: none; /* Checkmark initially hidden */
+
+    /* Positioning */
+    transform-origin: 50% 50%;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%); /* Vertically centering the icon */
+}
+
+/* Style changes when checkbox is checked */
+.send-checkV__input:checked ~ .send-checkV__label {
+    border: 1px solid #0085FF;
+}
+
+.send-checkV__input:checked ~ .send-checkV__label::before {
+    display: inline; /* Show checkmark */
+}
+/* send-checkV is done */
+
+
+.send-checkVI {
+    position: relative; /* This is essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkVI__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.send-checkVI__label {
+    display: inline-block; /* This is essential, Do not change */
+    position: relative; /* This is essential, Do not change */
+    cursor: pointer; /* This is essential, Do not change */
+
+    /* Customizable background */
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+}
+
+.send-checkVI__label::before {
+    /* Essential properties for checkmark */
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    color: #0085FF;
+    display: none; /* Checkmark initially hidden */
+
+    /* Positioning */
+    transform-origin: 50% 50%;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%); /* Vertically centering the icon */
+}
+
+/* Style changes when checkbox is checked */
+.send-checkVI__input:checked ~ .send-checkVI__label {
+    border: 1px solid #0085FF;
+}
+
+.send-checkVI__input:checked ~ .send-checkVI__label::before {
+    display: inline; /* Show checkmark */
+}
+/* send-checkVI is done */
+

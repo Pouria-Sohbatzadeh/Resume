@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Byekan";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/B_Yekan/Yekan.ttf) format("woff2");
+  }
+}
+@layer components {
+  /* helper classes */
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .flex-evenly {
+    @apply flex justify-evenly items-center;
+  }
+  /* icons */
+  .header-icon {
+    @apply relative cursor-pointer p-2 after:absolute after:bg-[#DDDDDD] after:w-0.5 after:h-[40%] after:right-full after:top-1/2 after:-translate-y-1/2
+  }
+  .badge {
+    @apply bg-primary-red rounded-full size-3.5 flex-center text-[8px] text-white
+  }
+  /* navbar */
+  .active {
+    @apply after:absolute after:bg-primary-red after:h-0.5 after:w-full after:bottom-0 after:left-0 text-dark
+  }
+  .submenu-item {
+    @apply relative after:h-[1px] after:bg-[#D1D1D1] after:absolute after:w-full after:top-full after:left-0 py-3
+  }
+  .disable {
+    @apply text-[#D1D1D1]
+  }
+}

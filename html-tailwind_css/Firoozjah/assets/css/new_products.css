@@ -1,0 +1,51 @@
+
+
+/* Only change the block name of the class for your uses. */
+.product-check__label {
+    display: inline-block;/* This is essential, Do not change, Without it we can't give <label> height: */
+    position: relative;/* This is essential, Do not change, Without it, We can't add the check */
+    cursor: pointer;/* This is essential, Do not change, Without it the user won't know they can click on the tag. */
+
+    /* Just creating the background for the check, You can freely change these */
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    /* Just creating the background for the check, You can freely change these */
+}
+
+.product-check__label::before {
+    /* These are essential, Do not change, Without them the check does not get added. */
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 5px;/* Remember, The width has to be half of the height: */
+    /* These are essential, Do not change, Without them the check does not get added. */
+
+    display: none;/* You CAN change this, But it's better from a visual standpoint for the check to appear after the user clickes on the tag.  */
+
+    
+    border-right: 2px solid rgb(0, 34, 146);
+    border-bottom: 2px solid rgb(0, 34, 146);
+    /* Remember, DO NOT MAKE THE BORDER WIDTH TOO THICK */
+
+
+    /* These are essential, Do not change */
+    rotate: 45deg;
+    transform-origin: 50% 50%;
+    top: 55%;
+    left: 15%;/* You HAVE to mess with this in order to center the check, Thanks to rotate messing with the alignment, Though it seems somewhere between 20% (for smaller 
+    backgrounds) and 40% (for bigger backgrounds) is the sweet spot */
+    transform: translate(-50%, -60%);
+    /* These are essential, Do not change */
+    
+}
+
+.product-check__input:checked ~ .product-check__label::before {
+    display: inline; /* Makes the check reappear after the user clicks on its background */
+    
+}
+
+
+

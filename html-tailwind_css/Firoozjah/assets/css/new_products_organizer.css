@@ -1,0 +1,107 @@
+/* Change the class name for your uses. */
+.tabel_check {
+    position: relative; /* This is essential, Do not change */
+    
+}
+
+/* Only change the block name of the class for your uses. */
+.tabel_check__input {
+    /* These are essential, Do not change */
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* These are essential, Do not change */
+}
+
+/* Only change the block name of the class for your uses. */
+.tabel_check__label {
+    display: inline-block;/* This is essential, Do not change, Without it we can't give <label> height: */
+    position: relative;/* This is essential, Do not change, Without it, We can't add the check */
+    cursor: pointer;/* This is essential, Do not change, Without it the user won't know they can click on the tag. */
+
+    /* Just creating the background for the check, You can freely change these */
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+    /* Just creating the background for the check, You can freely change these */
+}
+
+.tabel_check__label::before {
+    /* These are essential, Do not change, Without them the check does not get added. */
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 5px;/* Remember, The width has to be half of the height: */
+    /* These are essential, Do not change, Without them the check does not get added. */
+
+    display: none;/* You CAN change this, But it's better from a visual standpoint for the check to appear after the user clickes on the tag.  */
+
+    
+    border-right: 1px solid #0085FF;
+    border-bottom: 1px solid #0085FF;
+    /* Remember, DO NOT MAKE THE BORDER WIDTH TOO THICK */
+
+
+    /* These are essential, Do not change */
+    rotate: 45deg;
+    transform-origin: 50% 50%;
+    top: 50%;
+    left: 15%;/* You HAVE to mess with this in order to center the check, Thanks to rotate messing with the alignment, Though it seems somewhere between 20% (for smaller 
+    backgrounds) and 40% (for bigger backgrounds) is the sweet spot */
+    transform: translate(-50%, -60%);
+    /* These are essential, Do not change */
+    
+}
+
+.tabel_check__input:checked ~ .tabel_check__label {
+    border: 1px solid #0085FF;
+}
+
+.tabel_check__input:checked ~ .tabel_check__label::before {
+    display: inline; /* Makes the check reappear after the user clicks on its background */
+
+}
+
+
+.slide_check-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.slide_check-label {
+    position: relative;
+    border-radius: 20px;
+    width: 33px;
+    height: 16.5px;
+    background-color: #F0F0F0;
+    border: 1px solid #E3E3E3;
+    cursor: pointer;
+}
+
+.slide_check-input:checked ~ .slide_check-label {
+    background-color: #E2EFFF;
+    border: 1px solid #0085FF;
+}
+
+.slide_check-label::before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+    background-color: #D1D1D1;
+
+}
+
+.slide_check-input:checked ~ .slide_check-label::before {
+    background-color: #0085FF;
+    right: 1px;
+}

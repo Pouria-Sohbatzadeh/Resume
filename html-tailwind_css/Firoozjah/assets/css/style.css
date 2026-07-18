@@ -1,0 +1,53 @@
+@import url(./font.css);
+@import url(./style_responsive.css);
+@import url(./new_products.css);
+@import url(./new_products_pictures.CSS);
+@import url(./new_products_prices.css);
+@import url(./send_product.css);
+@import url(./new_products_organizer.css);
+@import url(utilities.css);
+
+
+span, p, label {
+    font-family: "iran_sans";
+ 
+}
+
+input {
+    outline: 1px solid transparent;
+}
+
+input:focus {
+    outline: 1px solid #57A4FF;     /* primary blue */
+    
+}
+
+
+
+.index_footer {
+    width: 100%;
+    z-index: -10;
+    top: 32px;
+    position: absolute;
+    height: 409px;
+    background-image: url(../images/index/footer/background/shopping_cart.jfif);
+    background-size: 176% auto;
+    background-position: -320px 0px;
+    filter: brightness(30%);
+}
+
+@media only screen and (min-width: 1024px){
+    .index_footer {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 0px 0px;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+}
+
+.blurred {
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
